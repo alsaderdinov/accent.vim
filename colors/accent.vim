@@ -23,13 +23,13 @@ let g:accent_colours['blue']    = { 'fg': '#61afe7', 'bg': '#3876af', 'ctermfg':
 let g:accent_colours['magenta'] = { 'fg': '#c688cd', 'bg': '#965498', 'ctermfg': '176', 'ctermbg': '133' }
 let g:accent_colours['cyan']    = { 'fg': '#56b6c2', 'bg': '#3696a2', 'ctermfg': '73',  'ctermbg': '30' }
 
-let g:accent_auto_cwd_colour = get(g:, 'accent_auto_cwd_colour', 1)
+let g:accent_auto_cwd_colour = get(g:, 'accent_auto_cwd_colour', 0)
 
 let s:accent = get(g:, 'accent_colour', 'magenta')
 let s:accent = get(g:, 'accent_color', s:accent)
 let s:darken = get(g:, 'accent_darken', 0)
 let s:invert_status = get(g:, 'accent_invert_status', 0)
-let s:no_bg = get(g:, 'accent_no_bg', 0)
+let s:no_bg = get(g:, 'accent_no_bg', 1)
 
 " 32 bit fowler-noll-vo hash
 function! s:fnv1a(str)
